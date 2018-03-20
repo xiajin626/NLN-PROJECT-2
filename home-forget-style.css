@@ -1,0 +1,83 @@
+body {
+	background-color: #fff3f3;
+}
+.text {
+	position: fixed;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	font-size: 2.2em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.1em;
+	color: #0daec9;
+}
+.shrink {
+	animation: shrink 45s;
+	animation-fill-mode: forwards;
+	display: inline-block;
+}
+.shrink2 {
+	animation: shrink2 45s;
+	animation-fill-mode: forwards;
+	display: inline-block;
+}
+.fade-out-1 {
+	animation: fadeOut 35s;
+	animation-fill-mode: forwards;
+	display: inline-block;
+}
+span {
+	color: #e75345;
+}
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		filter: blur(1.5px);
+	}
+}
+@keyframes shrink {
+	from {
+		position: relative;
+		left: 0%;
+	}
+	to {
+		position: relative;
+		left: 20%;
+	}
+}
+@keyframes shrink2 {
+	from {
+		position: relative;
+		left: 0%;
+	}
+	to {
+		position: relative;
+		left: -20%;
+	}
+}
+#twitter {
+	color: #0daec9;
+	font-size: 12pt;
+	position: absolute;
+	top: 90%;
+	left: 5%;
+}
+#youtube {
+	color: #0daec9;
+	font-size: 12pt;
+	position: absolute;
+	top: 90%;
+	left: 7%;
+}
+#website {
+	color: #0daec9;
+	font-size: 0.8em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.1em;
+	position: absolute;
+	top: 90%;
+	left: 9%;
+}
